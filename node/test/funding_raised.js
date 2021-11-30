@@ -97,7 +97,7 @@ describe('FundingRaised', () => {
     describe('company_name is YouTube and round is b', () => {
       const row = FundingRaised.findBy({company_name: 'YouTube', round: 'b'});
 
-      xit('returns correct result', () => {
+      it('returns correct result', () => {
         assert.equal(row.round, 'b');
       });
     });
